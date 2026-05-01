@@ -7,14 +7,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="controls">
+      <button id="pause-btn">Pause</button>
+    </div>
+
     <div id="solar-system">
       <div id="sun"></div>
     </div>
 
     <div id="info-panel" class="hidden">
       <button id="close-btn">&times;</button>
-      <h2 id="planet-name"></h2>
-      <p id="planet-info"></p>
+      <div class="panel-content">
+        <h2 id="planet-name"></h2>
+        <h3 id="planet-name-en"></h3>
+        <hr />
+        <p id="planet-info"></p>
+        <p id="planet-info-en" class="text-en"></p>
+      </div>
     </div>
 
     <script src="script.js"></script>

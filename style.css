@@ -120,6 +120,49 @@ body {
     font-size: 14px;
 }
 
+#planet-name-en {
+    margin: 0;
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.text-en {
+    font-style: italic;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 15px 0;
+}
+
+#controls {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+#pause-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #666;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#pause-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.orbit.paused {
+    animation-play-state: paused;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     #info-panel {
